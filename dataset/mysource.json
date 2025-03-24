@@ -5,11 +5,6 @@
 			"referenceName": "AzureDataLakeStorage2ns",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"filename": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
