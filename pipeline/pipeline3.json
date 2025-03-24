@@ -93,7 +93,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@less(activity('Get Metadata2').output.lastModified, formatDateTime(addDays(utcNow(), -20), 'yyyy-MM-ddTHH:mm:ssZ'))\n",
+									"value": "@equals(formatDateTime(item().lastModified, 'yyyy-MM-dd'), formatDateTime(utcNow(), 'yyyy-MM-dd'))\n",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
