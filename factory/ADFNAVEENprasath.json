@@ -1,0 +1,9 @@
+{
+	"name": "ADFNAVEENprasath",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a57c5bb9-f669-4716-9842-78fd2983fe63",
+		"tenantId": "f2bb2193-0ab3-4423-9ec2-167cb4906891"
+	}
+}
