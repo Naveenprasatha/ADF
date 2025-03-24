@@ -1,5 +1,5 @@
 {
-	"name": "pipeline3",
+	"name": "Delete older than 30 days",
 	"properties": {
 		"activities": [
 			{
