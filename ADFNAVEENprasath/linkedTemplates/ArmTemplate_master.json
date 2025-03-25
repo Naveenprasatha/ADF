@@ -7,35 +7,11 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADFNAVEENprasath"
 		},
-		"AzureDataLakeStorage1_accountKey": {
+		"Rawlayer_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+			"metadata": "Secure string for 'accountKey' of 'Rawlayer'"
 		},
-		"AzureDataLakeStorage2_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage2'"
-		},
-		"AzureDataLakeStorage2ns_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage2ns'"
-		},
-		"AzureDataLakeStorage3_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage3'"
-		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://adfstoragenaveen.dfs.core.windows.net/"
-		},
-		"AzureDataLakeStorage2_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://adfstoragenaveen.dfs.core.windows.net/"
-		},
-		"AzureDataLakeStorage2ns_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://adfstoragenaveen.dfs.core.windows.net/"
-		},
-		"AzureDataLakeStorage3_properties_typeProperties_url": {
+		"Rawlayer_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adfstoragenaveen.dfs.core.windows.net/"
 		},
@@ -66,29 +42,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureDataLakeStorage1_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					"Rawlayer_accountKey": {
+						"value": "[parameters('Rawlayer_accountKey')]"
 					},
-					"AzureDataLakeStorage2_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage2_accountKey')]"
-					},
-					"AzureDataLakeStorage2ns_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage2ns_accountKey')]"
-					},
-					"AzureDataLakeStorage3_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage3_accountKey')]"
-					},
-					"AzureDataLakeStorage1_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
-					},
-					"AzureDataLakeStorage2_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage2_properties_typeProperties_url')]"
-					},
-					"AzureDataLakeStorage2ns_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage2ns_properties_typeProperties_url')]"
-					},
-					"AzureDataLakeStorage3_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage3_properties_typeProperties_url')]"
+					"Rawlayer_properties_typeProperties_url": {
+						"value": "[parameters('Rawlayer_properties_typeProperties_url')]"
 					}
 				}
 			},
