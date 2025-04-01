@@ -59,7 +59,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@equals(item().run_date, utcnow('yyyy-MM-dd'))",
+									"value": "@equals(trim(item().run_date), utcnow('yyyy-MM-dd'))",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
