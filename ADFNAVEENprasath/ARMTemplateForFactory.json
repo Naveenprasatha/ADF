@@ -175,12 +175,12 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"name": "[concat(parameters('factoryName'), '/trigger89')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipeline": {
 					"pipelineReference": {
 						"referenceName": "pipeline1",
@@ -191,9 +191,8 @@
 				"type": "TumblingWindowTrigger",
 				"typeProperties": {
 					"frequency": "Minute",
-					"interval": 5,
-					"startTime": "2025-03-24T12:09:00Z",
-					"endTime": "2025-04-02T12:09:00Z",
+					"interval": 15,
+					"startTime": "2025-04-01T18:14:00Z",
 					"delay": "00:00:00",
 					"maxConcurrency": 50,
 					"retryPolicy": {
