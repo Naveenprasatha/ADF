@@ -34,11 +34,8 @@
 				}
 			},
 			{
-				"name": "If Condition1",
-				"description": "",
-				"type": "IfCondition",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
+				"name": "ForEach1",
+				"type": "ForEach",
 				"dependsOn": [
 					{
 						"activity": "Lookup1",
@@ -49,14 +46,29 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
-					"ifTrueActivities": [
+					"items": {
+						"value": "@activity('Lookup1').output.value",
+						"type": "Expression"
+					},
+					"activities": [
 						{
-							"name": "Wait1",
-							"type": "Wait",
+							"name": "If Condition1",
+							"description": "",
+							"type": "IfCondition",
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"waitTimeInSeconds": 5
+								"ifTrueActivities": [
+									{
+										"name": "Wait1",
+										"type": "Wait",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"waitTimeInSeconds": 5
+										}
+									}
+								]
 							}
 						}
 					]
