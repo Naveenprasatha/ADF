@@ -1,0 +1,28 @@
+{
+	"name": "linkedadls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Rawlayer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "test.csv",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "run_date ",
+				"type": "String"
+			}
+		]
+	}
+}
