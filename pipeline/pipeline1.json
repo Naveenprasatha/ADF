@@ -29,7 +29,8 @@
 					"dataset": {
 						"referenceName": "linkedadls",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
