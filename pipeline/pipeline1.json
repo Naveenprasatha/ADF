@@ -62,6 +62,17 @@
 									"value": "@equals(trim(item().run_date), utcnow('yyyy-MM-dd'))",
 									"type": "Expression"
 								},
+								"ifFalseActivities": [
+									{
+										"name": "Wait2",
+										"type": "Wait",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"waitTimeInSeconds": 1
+										}
+									}
+								],
 								"ifTrueActivities": [
 									{
 										"name": "Wait1",
